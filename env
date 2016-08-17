@@ -1,0 +1,3 @@
+SHARED_PATH=/data/backups/IP_of_the_remote/:
+OPTION=:rw
+PORT=2226:

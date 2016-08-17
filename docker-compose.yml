@@ -1,0 +1,8 @@
+sshd:
+  image: macropin/sshd
+  volumes:
+    - ./id_rsa.pub:/root/.ssh/authorized_keys:ro
+    - $SHARED_PATH/backups$OPTION
+    - ./etc/ssh:/etc/ssh
+  ports:
+    - "${PORT}22"
